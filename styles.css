@@ -1,0 +1,121 @@
+body {
+    background-color: #1b1b1b;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Seções */
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+/* Seção 1, 3, 4 e 5 - Alinhar os textos ao centro */
+.section-text {
+    width: 50%;
+    text-align: center; /* Centraliza o texto */
+}
+
+.section-text h1,
+.section-text h2,
+.section-text p {
+    text-align: center; /* Centraliza os títulos e parágrafos */
+}
+
+/* Seção de Imagem */
+.section-image {
+    width: 50%;
+    text-align: center;
+}
+
+.section-image img {
+    width: 90%;
+}
+
+/* Seção 2 - Projetos (Centralizada) */
+.section.projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px; /* Adiciona um pequeno espaçamento uniforme */
+}
+
+.buttons a {
+    display: inline-block; /* Mantém o botão no tamanho do conteúdo */
+    padding: 15px 20px;
+    font-size: 18px;
+    margin: 5px 0;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 250px; /* Garante que todos tenham a mesma largura */
+    text-align: center;
+}
+
+.github {
+    background-color: #24292e;
+}
+
+.instagram, .dm {
+    background-color: #364a46;
+}
+
+.whatsapp {
+    background-color: #258676;
+}
+
+.cta {
+    text-align: center;
+}
+/* Seção Final - Centralizada */
+.section.final {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+
+.devices img {
+    width: 200px;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    .section-text, .section-image, .buttons {
+        width: 100%;
+        align-items: center;
+    }
+
+    .buttons {
+        width: 100%; /* Faz com que os botões respeitem o espaço disponível */
+    }
+
+    .buttons a {
+        width: 250px;
+        text-align: center;
+    }
+}
